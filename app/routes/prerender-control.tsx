@@ -14,7 +14,7 @@ export async function loader() {
 
 export function headers({ loaderHeaders }: HeadersArgs) {
   const headers = new Headers(loaderHeaders);
-  headers.set("Cdn-Cache-Control", "max-age=300, durable");
+
   return headers;
 }
 
